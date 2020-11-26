@@ -1,5 +1,10 @@
 import Card from "./Card";
-function Content(){
+
+
+function Content(props){
+  
+  
+  
   return(
   <div className="content">
     <Card/>

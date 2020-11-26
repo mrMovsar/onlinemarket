@@ -1,6 +1,6 @@
 import Logo from "./Logo/Logo";
 import Menu from "./Menu";
-import Checkout from "./Checkout";
+import Checkout from "./Checkout/Checkout";
 
 const Header=()=>{
   return(

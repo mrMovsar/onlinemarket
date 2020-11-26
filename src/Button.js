@@ -1,7 +1,7 @@
 function Button(){
   return(
     <div className="card-button">
-      <button className="btn"></button>
+      <button className="btn">Добавить в корзину</button>
     </div>
   )
 }

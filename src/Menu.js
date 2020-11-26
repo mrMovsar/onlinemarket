@@ -3,7 +3,11 @@ function Menu(){
   return(
   <div className="menu">
     <ul>
-  <li>aaffa</li>
+  <li>ОДЕЖДА</li>
+  <li>ДЕТЯМ</li>
+  <li>КНИГИ</li>
+  <li>КОМПЬЮТЕРЫ</li>
+  <li>КОНТАКТЫ</li>
     </ul>
   </div>
   )

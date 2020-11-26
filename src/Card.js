@@ -1,9 +1,8 @@
-import Button from "./Button";
-function Card(){
-  return(
-    <div className="card">
-      <Button/>
-    </div>
-  )
+function Card(props){
+    return(
+        <>
+        {props.product}
+        </>
+    )
 }
 export default Card;
