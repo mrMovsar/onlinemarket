@@ -78,9 +78,10 @@ function App() {
       }
     ]
   );
+  
   return (
     <div className="app">
-        <Header />
+        <Header products={database}/>
         <Content products={database}/>
     </div>
   );

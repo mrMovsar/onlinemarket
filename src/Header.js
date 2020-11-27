@@ -2,12 +2,12 @@ import Logo from "./Logo/Logo";
 import Menu from "./Menu";
 import Checkout from "./Checkout/Checkout";
 
-const Header=()=>{
+function Header(props){
   return(
   <div className="header">
     <Logo/>
     <Menu/>
-    <Checkout/>
+    <Checkout products={props.products}/>
   </div>
   )
 }
