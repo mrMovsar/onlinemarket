@@ -8,7 +8,7 @@ function Content(props){
     <div className="content">
       {props.products.map((product)=>{
         return(
-           <Card product={product}/>
+           <Card product={product} setBought={props.setBought}/>
         )
       })}
     </div>

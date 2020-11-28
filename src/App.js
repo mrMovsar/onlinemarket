@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Content from "./Content";
 import React, { useState } from 'react';
-function App() {
+function App(props) {
   const [database, setDatabase] = useState(
     [
       {
@@ -78,11 +78,18 @@ function App() {
       }
     ]
   );
-  
+  const setBought = (id) => {
+    setDatabase(database.map((prod) => {
+      if(prod.id === id){
+        return {...prod, bought:true}
+      }
+      return prod;
+    }))
+  }
   return (
     <div className="app">
         <Header products={database}/>
-        <Content products={database}/>
+        <Content products={database} setBought={setBought}/>
     </div>
   );
 }
